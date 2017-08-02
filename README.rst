@@ -1,5 +1,5 @@
 ===============
-Python Cimpress
+Cimpress API Wrapper
 ===============
 
 

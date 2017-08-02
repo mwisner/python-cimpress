@@ -7,8 +7,8 @@
 import unittest
 from click.testing import CliRunner
 
-from python_cimpress import python_cimpress
-from python_cimpress import cli
+from cimpress import python_cimpress
+from cimpress import cli
 
 
 class TestPython_cimpress(unittest.TestCase):

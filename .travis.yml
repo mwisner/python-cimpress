@@ -9,6 +9,7 @@ python:
   - 3.3
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+install: pip install -r requirements_dev.txt
 install: pip install -U tox-travis
 
 # command to run tests, e.g. python setup.py test
@@ -24,5 +25,5 @@ deploy:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: mwisner/python_cimpress
+    repo: mwisner/python-cimpress
     python: 3.6

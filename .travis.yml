@@ -3,17 +3,17 @@
 
 language: python
 python:
+  - 3.6
   - 3.5
-  - 3.4
-  - 3.3
-  - 2.7
-  - 2.6
 
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox-travis
 
+install:
+  - pip install -U tox-travis
+  - pip install -r requirements_dev.txt
 # command to run tests, e.g. python setup.py test
-script: tox
+
+script:
+  - nosetests tests
 
 # After you create the Github repo and add it to Travis, run the
 # travis_pypi_setup.py script to finish PyPI deployment setup
@@ -25,5 +25,5 @@ deploy:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: mwisner/python_cimpress
-    python: 2.7
+    repo: mwisner/python-cimpress
+    python: 3.6

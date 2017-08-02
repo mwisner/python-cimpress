@@ -8,6 +8,9 @@ def get_client_with_token():
     username = os.environ.get('CIMPRESS_USERNAME')
     password = os.environ.get('CIMPRESS_PASSWORD')
 
+    from pprint import pprint
+    pprint(username)
+
     token = get_api_token(client_id, username, password)
 
     if not token:

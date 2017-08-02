@@ -19,8 +19,6 @@ class Client(object):
 
     @property
     def _auth(self):
-        from pprint import pprint
-        pprint(self.token)
         return self.token
 
     @property

@@ -1,6 +1,4 @@
-|                      |
-|----------------------|
-| Cimpress API Wrapper |
+# Cimpress API Wrapper
 
 [![image]]
 
@@ -10,22 +8,17 @@
 
 [![Updates]]
 
-Python API Client for the cimpress open api
+# Notes
+This is very much a WIP. PRs welcome.
 
--   Free software: MIT license
--   Documentation: <https://python-cimpress.readthedocs.io>.
-
-Features
-========
-
+#Features
 -   TODO
 
-Credits
-=======
+#Credits
 
 This package was created with [Cookiecutter] and the [audreyr/cookiecutter-pypackage] project template.
 
-eval $(cat .env | sed ‘s/^/export /’)
+
 
   [image]: https://img.shields.io/pypi/v/python_cimpress.svg
   [![image]]: https://pypi.python.org/pypi/python-cimpress
@@ -37,3 +30,20 @@ eval $(cat .env | sed ‘s/^/export /’)
   [![Updates]]: https://pyup.io/repos/github/mwisner/python-cimpress/
   [Cookiecutter]: https://github.com/audreyr/cookiecutter
   [audreyr/cookiecutter-pypackage]: https://github.com/audreyr/cookiecutter-pypackage
+
+# Testing
+1) Setup Env vars:
+```bash
+cp .env.example .env
+```
+Then add the correct creds
+
+2) Create venv
+https://docs.python.org/3/library/venv.html#creating-virtual-environments
+
+4) Activate venv
+
+5) Set Env Vars
+```bash
+eval $(cat .env | sed ‘s/^/export /’)
+```

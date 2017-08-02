@@ -1,6 +1,7 @@
 import requests
 from .errors import CimpressError
 
+
 class Client(object):
 
     def __init__(self, token, environment="sandbox"):
@@ -25,6 +26,16 @@ class Client(object):
     def v1_products(self):
         from .service.v1 import products
         return products.Products(self)
+
+    @property
+    def v2_documents(self):
+        from .service.v2 import documents
+        return documents.Documents(self)
+
+    @property
+    def v2_orders(self):
+        from .service.v2 import orders
+        return orders.Orders(self)
 
     def _execute_request(self, request, params):
         result = request.execute(self.base_url, self._auth, params)

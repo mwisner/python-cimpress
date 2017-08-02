@@ -12,15 +12,14 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    "requests",
+    'requests',
 ]
 
-setup_requirements = [
-    # TODO(mwisner): put setup requirements (distutils extensions, etc.) here
-]
+setup_requirements = []
 
 test_requirements = [
-    # TODO: put package test requirements here
+    'requests',
+    'nose'
 ]
 
 setup(
